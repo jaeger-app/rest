@@ -1,0 +1,24 @@
+{
+  "name" : "jaeger-app/rest-server",
+  "description" : "A rest server abstraction to add REST capabilities to a Jaeger based app.",
+  "require" : {
+    "php" : ">=5.4.0",
+        "respect/rest": "^0.6.0",
+        "nocarrier/hal": "^0.9.12",
+        "crell/api-problem": "^1.7",
+        "philipbrown/signature-php": "^5.1"
+  },
+  "require-dev" : {
+    "phpunit/phpunit" : "4.*"
+  },
+  "authors" : [ {
+    "name" : "Eric Lamb",
+    "email" : "eric@mithra62.com"
+  } ],
+  "autoload" : {
+    "psr-4" : {
+      "JaegerApp\\" : "src/"
+    }
+  },
+  "license" : "MIT"
+}
