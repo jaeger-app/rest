@@ -1,14 +1,14 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @copyright	Copyright (c) 2016, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Rest/Hmac.php
+ * @filesource 	./Rest/Hmac.php
  */
  
-namespace mithra62\Rest;
+namespace JaegerApp\Rest;
 
 use PhilipBrown\Signature\Auth;
 use PhilipBrown\Signature\Token;
@@ -19,7 +19,7 @@ use PhilipBrown\Signature\Guards\CheckSignature;
 use PhilipBrown\Signature\Exceptions\SignatureException;
 
 /**
- * mithra62 - REST Hmac Object
+ * Jaeger - REST Hmac Object
  *
  * Allows for Hmac authentication 
  *
@@ -89,7 +89,7 @@ class Hmac
     /**
      * Sets the HTTP method to use
      * @param string $method
-     * @return \mithra62\Rest\Hmac
+     * @return \JaegerApp\Rest\Hmac
      */
     public function setMethod($method)
     {
@@ -109,7 +109,7 @@ class Hmac
     /**
      * Sets the route to use
      * @param string $route
-     * @return \mithra62\Rest\Hmac
+     * @return \JaegerApp\Rest\Hmac
      */
     public function setRoute($route)
     {
@@ -129,7 +129,7 @@ class Hmac
     /**
      * Sets the data payload to use
      * @param string $data
-     * @return \mithra62\Rest\Hmac
+     * @return \JaegerApp\Rest\Hmac
      */
     public function setData($data)
     {

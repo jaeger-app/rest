@@ -1,14 +1,14 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @copyright	Copyright (c) 2016, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
- * @version		3.0
- * @filesource 	./mithra62/Rest/AbstractServer.php
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
+ * @version		1.0
+ * @filesource 	./Rest/AbstractServer.php
  */
  
-namespace mithra62\Rest;
+namespace JaegerApp\Rest;
 
 /**
  * Abstract REST Server
@@ -22,13 +22,13 @@ abstract class AbstractServer
 {
     /**
      * The Platform object
-     * @var \mithra62\Platforms\AbstractPlatform
+     * @var \JaegerApp\Platforms\AbstractPlatform
      */
     protected $platform = null;
     
     /**
      * The REST object
-     * @var \mithra62\BackupPro\Rest
+     * @var \JaegerApp\Rest
      */
     protected $rest = null;
     
@@ -40,10 +40,10 @@ abstract class AbstractServer
     
     /**
      * Set it up
-     * @param \mithra62\Platforms\AbstractPlatform $platform
-     * @param \mithra62\BackupPro\Rest $rest
+     * @param \JaegerApp\Platforms\AbstractPlatform $platform
+     * @param \JaegerApp\BackupPro\Rest $rest
      */
-    public function __construct(\mithra62\Platforms\AbstractPlatform $platform, \mithra62\Rest $rest)
+    public function __construct(\JaegerApp\Platforms\AbstractPlatform $platform, \JaegerApp\Rest $rest)
     {
         $this->platform = $platform;
         $this->rest = $rest;
@@ -51,7 +51,7 @@ abstract class AbstractServer
     
     /**
      * Returns an instance of the Hmac object
-     * @return \mithra62\Rest\Hmac
+     * @return \JaegerApp\Rest\Hmac
      */
     public function getHmac()
     {

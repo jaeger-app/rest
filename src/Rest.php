@@ -1,17 +1,16 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @copyright	Copyright (c) 2016, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Rest.php
+ * @filesource 	./Rest.php
  */
- 
-namespace mithra62;
+namespace JaegerApp;
 
 /**
- * mithra62 - REST Object
+ * Jaeger - REST Object
  *
  * Base REST object 
  *
@@ -58,7 +57,7 @@ class Rest
      * @param \mithra62\Platforms\AbstractPlatform $platform
      * @return \mithra62\Rest
      */
-    public function setPlatform(\mithra62\Platforms\AbstractPlatform $platform)
+    public function setPlatform(\JaegerApp\Platforms\AbstractPlatform $platform)
     {
         $this->platform = $platform;
         return $this;
@@ -69,7 +68,7 @@ class Rest
      * @param \mithra62\Language $lang
      * @return \mithra62\Rest
      */
-    public function setLang(\mithra62\Language $lang)
+    public function setLang(\JaegerApp\Language $lang)
     {
         $this->lang = $lang;
         return $this;
