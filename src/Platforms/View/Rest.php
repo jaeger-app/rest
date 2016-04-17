@@ -1,23 +1,23 @@
 <?php
 /**
- * mithra62 - Backup Pro
+ * Jaeger
  *
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
- * @version		3.0
- * @filesource 	./mithra62/Platforms/View/Rest.php
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
+ * @version		1.0
+ * @filesource 	./Platforms/View/Rest.php
  */
-namespace mithra62\Platforms\View;
+namespace JaegerApp\Platforms\View;
 
 use Nocarrier\Hal;
 use Crell\ApiProblem\ApiProblem;
 
 /**
- * Backup Pro - Rest View Object
+ * Jaeger - Rest View Object
  *
  * Contains the view helpers for Rest Requests
  *
- * @package BackupPro\View
+ * @package Rest\View
  * @author Eric Lamb <eric@mithra62.com>
  */
 class Rest extends AbstractView
