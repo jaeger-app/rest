@@ -1,17 +1,17 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @copyright	Copyright (c) 2016, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Rest/Platforms/Controllers/Rest.php
+ * @filesource 	./Rest/Platforms/Controllers/Rest.php
  */
  
-namespace mithra62\Platforms\Controllers;
+namespace JaegerApp\Platforms\Controllers;
 
 /**
- * mithra62 - REST Base Controller
+ * Jaeger - REST Base Controller
  *
  * Contains the global REST methods
  *
