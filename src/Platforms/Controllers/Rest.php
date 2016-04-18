@@ -20,7 +20,64 @@ namespace JaegerApp\Platforms\Controllers;
  */
 class Rest
 {
+    /**
+     * The JSON body payload sent with requests
+     * @var array
+     */
     protected $body_data = null;
+    
+    /**
+     * The Rest object
+     * @var \JaegerApp\Rest
+     */
+    protected $rest = null;
+
+    /**
+     * The abstracted platform object
+     * 
+     * @var \JaegerApp\Platforms\Eecms
+     */
+    protected $platform = null;
+    
+    /**
+     * Sets the Rest object
+     * @param \JaegerApp\Rest $rest
+     * @return \JaegerApp\Platforms\Controllers\Rest
+     */
+    public function setRest(\JaegerApp\Rest $rest)
+    {
+        $this->rest = $rest;
+        return $this;
+    }
+    
+    /**
+     * Returns the Rest object
+     * @return \JaegerApp\Rest
+     */
+    public function getRest()
+    {
+        return $this->rest;
+    }
+    
+    /**
+     * Sets the Platform object
+     * @param \JaegerApp\Platforms\AbstractPlatform $platform
+     * @return \JaegerApp\Platforms\Controllers\Rest
+     */
+    public function setPlatform(\JaegerApp\Platforms\AbstractPlatform $platform)
+    {
+        $this->platform = $platform;
+        return $this;
+    }
+    
+    /**
+     * Returns the Platform object
+     * @return \JaegerApp\Platforms\Eecms
+     */
+    public function getPlatform()
+    {
+        return $this->platform;
+    }
     
     /**
      * Authenticates the request
