@@ -85,10 +85,10 @@ class Rest
      */
     public function authenticate()
     {
-        $hmac = $this->rest->getServer()->getHmac();
+        $hmac = $this->getRest()->getServer()->getHmac();
         $data = array_merge($this->getRequestHeaders(true), $this->getBodyData());
         $auth = $hmac->setData($data)
-                     ->setRoute($this->platform->getPost('bp_method'))
+                     ->setRoute($this->getPlatform()->getPost('bp_method'))
                      ->setMethod($_SERVER['REQUEST_METHOD'])
                      ->auth($this->settings['api_key'], $this->settings['api_secret']);
         
@@ -127,7 +127,7 @@ class Rest
     {
         $headers = \getallheaders();
         if($auth) {
-            $hmac = $this->rest->getServer()->getHmac();
+            $hmac = $this->getRest()->getServer()->getHmac();
             $return = array(
                 $hmac->getPrefix().'timestamp' => (isset($headers[$hmac->getPrefix().'timestamp']) ? $headers[$hmac->getPrefix().'timestamp'] : ''),
                 $hmac->getPrefix().'signature' => (isset($headers[$hmac->getPrefix().'signature']) ? $headers[$hmac->getPrefix().'signature'] : ''),
