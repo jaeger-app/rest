@@ -86,77 +86,48 @@ class Rest
     /**
      * Handy little method to disable unused HTTP verb methods
      *
-     * @return \ZF\ApiProblem\ApiProblemResponse
+     * @return ApiProblem
      */
     protected function methodNotAllowed()
     {
         return $this->view_helper->renderError(405, 'method_not_allowed');
     }
     
-    /**
-     * Processes the OPTIONS verb
-     * @param string $id
-     */
     public function options($id = false)
     {
         return;
     }
     
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::create()
-     */
     public function post()
     {
         return $this->methodNotAllowed();
     }
     
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::delete()
-     */
+    public function create()
+    {
+        return $this->methodNotAllowed();
+    }
+    
     public function delete($id = false)
     {
         return $this->methodNotAllowed();
     }
     
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::get()
-     */
     public function get($id = false)
     {
         return $this->methodNotAllowed();
     }
     
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::head()
-     */
     public function head($id = null)
     {
         return $this->methodNotAllowed();
     }
     
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::patch()
-     */
     public function patch($id)
     {
         return $this->methodNotAllowed();
     }
     
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::patch()
-     */
     public function put($id = false)
     {
         return $this->methodNotAllowed();
