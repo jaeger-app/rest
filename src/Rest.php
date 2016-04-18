@@ -9,6 +9,8 @@
  */
 namespace JaegerApp;
 
+use JaegerApp\Exceptions\RestException;
+
 /**
  * Jaeger - REST Object
  *
@@ -49,7 +51,7 @@ class Rest
      */
     public function getServer()
     {
-        throw new \Exception("Not implemented!");
+        throw new RestException("Not implemented!");
     }
     
     /**
