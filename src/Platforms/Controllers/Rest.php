@@ -94,22 +94,12 @@ class Rest
     }
     
     /**
-     * Prepares the OPTIONS verb
+     * Processes the OPTIONS verb
      * @param string $id
      */
     public function options($id = false)
     {
         return;
-    }
-    
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::create()
-     */
-    public function create($data)
-    {
-        return $this->methodNotAllowed();
     }
     
     /**
@@ -135,29 +125,9 @@ class Rest
     /**
      * (non-PHPdoc)
      *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::deleteList()
-     */
-    public function deleteList()
-    {
-        return $this->methodNotAllowed();
-    }
-    
-    /**
-     * (non-PHPdoc)
-     *
      * @see \Zend\Mvc\Controller\AbstractRestfulController::get()
      */
     public function get($id = false)
-    {
-        return $this->methodNotAllowed();
-    }
-    
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::getList()
-     */
-    public function getList()
     {
         return $this->methodNotAllowed();
     }
@@ -188,16 +158,6 @@ class Rest
      * @see \Zend\Mvc\Controller\AbstractRestfulController::patch()
      */
     public function put($id = false)
-    {
-        return $this->methodNotAllowed();
-    }
-    
-    /**
-     * (non-PHPdoc)
-     *
-     * @see \Zend\Mvc\Controller\AbstractRestfulController::update()
-     */
-    public function update($id, $data)
     {
         return $this->methodNotAllowed();
     }

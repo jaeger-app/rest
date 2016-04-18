@@ -8,6 +8,7 @@
 		"crell/api-problem": "^1.7",
 		"philipbrown/signature-php": "^5.1",
 		"jaeger-app/platforms": "dev-master",
+		"jaeger-app/view": "dev-master",
 		"jaeger-app/language": "dev-master"
 	},
 	"require-dev": {
@@ -21,7 +22,7 @@
 	}],
 	"autoload": {
 		"psr-4": {
-			"JaegerApp\\": "src/"
+			"JaegerApp\\": "src"
 		}
 	},
 	"license": "MIT"

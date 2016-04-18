@@ -54,8 +54,8 @@ class Rest
     
     /**
      * Sets the Platform object
-     * @param \mithra62\Platforms\AbstractPlatform $platform
-     * @return \mithra62\Rest
+     * @param \JaegerApp\Platforms\AbstractPlatform $platform
+     * @return \JaegerApp\Rest
      */
     public function setPlatform(\JaegerApp\Platforms\AbstractPlatform $platform)
     {
@@ -64,9 +64,18 @@ class Rest
     }
     
     /**
+     * Returns the Platforms object
+     * @return \Platforms\AbstractPlatform
+     */
+    public function getPlatform()
+    {
+        return $this->platform;
+    }
+    
+    /**
      * Sets the Language object to use
-     * @param \mithra62\Language $lang
-     * @return \mithra62\Rest
+     * @param \JaegerApp\Language $lang
+     * @return \JaegerApp\Rest
      */
     public function setLang(\JaegerApp\Language $lang)
     {
@@ -74,9 +83,32 @@ class Rest
         return $this;
     }
     
+    /**
+     * Returns the Language object
+     * @return \JaegerApp\Language
+     */
+    public function getLang()
+    {
+        return $this->lang;
+    }
+    
+    /**
+     * Sets the route we're attempting to execute
+     * @param string $route
+     * @return \JaegerApp\Rest
+     */
     public function setRoute($route)
     {
         $this->route = $route;
         return $this;
+    }
+    
+    /**
+     * Returns the route
+     * @return string
+     */
+    public function getRoute()
+    {
+        return $this->route;
     }
 }
