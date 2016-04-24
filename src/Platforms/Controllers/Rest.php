@@ -88,7 +88,7 @@ class Rest
         $hmac = $this->getRest()->getServer()->getHmac();
         $data = array_merge($this->getRequestHeaders(true), $this->getBodyData());
         $auth = $hmac->setData($data)
-                     ->setRoute($this->getPlatform()->getPost('bp_method'))
+                     ->setRoute($this->getPlatform()->getPost('api_method'))
                      ->setMethod($_SERVER['REQUEST_METHOD'])
                      ->auth($this->settings['api_key'], $this->settings['api_secret']);
         
